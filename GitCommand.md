@@ -43,3 +43,8 @@ git ls-files → 깃에 올라가 있는 파일과 폴더를 확인할 수 있�
 - git branch -M [되고싶은 branch name]
 - git branch -m [현재 branch name] [바꾸고싶은 branch name]
 - **git checkout [전환하고싶은 브랜치명] → 브랜치 전환**
+
+
+이 때, pull 명령어에 옵션을 추가하여 강제로 push를 하는 방법으로 아래의 명령어를 작성한다.
+git pull origin (branchname) --allow-unrelated-histories
+
