@@ -9,6 +9,12 @@
 
 - git pull [https://github.com/williamkevin/Sp-ACE.git](https://github.com/williamkevin/Sp-ACE.git) main
 
+## ADD
+
+- git add .
+- git add 파일경로/파일
+- git rm --cached 파일경로/파일 -> 추가된 소스 제거
+
 ## PUSH
 
 - git init → **깃**을 사용할 수 있도록 **폴더**를 초기화
