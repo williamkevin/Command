@@ -54,3 +54,34 @@ git ls-files → 깃에 올라가 있는 파일과 폴더를 확인할 수 있�
 이 때, pull 명령어에 옵션을 추가하여 강제로 push를 하는 방법으로 아래의 명령어를 작성한다.
 git pull origin (branchname) --allow-unrelated-histories
 
+## 파일 삭제하기
+
+1. 로컬 디렉토리와 깃 저장소 모두에서 삭제
+
+```
+$ git rm HelloWorld.java
+$ git commit -m "Delete HelloWorld.java"
+```
+
+2. 로컬 디렉토리에서는 삭제하지 않고 git에서만 삭제
+
+```
+$ git rm --cached HelloJAVA.class
+$ git commit -m "Delete HelloJAVA.class"
+```
+
+## 폴더 삭제하기
+
+1. 로컬 디렉토리와 git 저장소에서 모두 삭제
+
+```
+$ git rm -rf 폴더명
+$ git commit -m "delete folder"
+```
+
+2. 로컬 디렉토리의 폴더는 유지한 채 git 저장소에서만 폴더 삭제하기
+
+```
+$ git rm --cached -r bin/
+$ git commit -m "delete folder"
+```
